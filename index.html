@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohamed Nabil S | Developer Portfolio</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Portfolio of Mohamed Nabil S - Frontend Developer & AI/Data Science Graduate building real-world web applications and AI-powered systems.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome & Devicons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="loader-content">
+            <span class="loader-logo">MN.</span>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" id="cursor-dot"></div>
+    <div class="cursor-outline" id="cursor-outline"></div>
+
+    <!-- Premium Ambient Background -->
+    <div class="ambient-background">
+        <div class="ambient-blob blob-1"></div>
+        <div class="ambient-blob blob-2"></div>
+        <div class="ambient-blob blob-3"></div>
+    </div>
+
+    <!-- 3D Interactive Background -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Navigation -->
+    <header class="header" id="header">
+        <nav class="navbar container">
+            <a href="#home" class="logo">
+                <span class="logo-text">MN.</span>
+            </a>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                <li class="nav-item">
+                    <a href="resume/Mohamed_Nabil_Resume.pdf" target="_blank" class="btn btn-primary nav-btn">Resume</a>
+                </li>
+            </ul>
+
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="content-wrapper">
+        <!-- Hero Section -->
+        <section id="home" class="hero section">
+            <div class="container hero-container">
+                <div class="hero-content reveal-bottom">
+                    <p class="hero-greeting">Hi, I'm</p>
+                    <h1 class="hero-name glow-text">Mohamed Nabil S</h1>
+                    <h2 class="hero-title">
+                        <span class="text-gradient">Frontend Developer</span> <span class="divider">|</span> AI & Data Science Graduate
+                    </h2>
+                    <p class="hero-desc">
+                        I enjoy building real-world websites, AI-based projects, and modern responsive web applications with clean UI and practical functionality.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary interactive-element">View Projects</a>
+                        <a href="resume/Mohamed_Nabil_Resume.pdf" target="_blank" class="btn btn-secondary interactive-element">Download Resume</a>
+                        <a href="#contact" class="btn btn-outline interactive-element">Contact Me</a>
+                    </div>
+                    <div class="hero-socials">
+                        <a href="https://github.com/Mohamednabil292638" target="_blank" class="social-icon interactive-element"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/mohamed-nabil-950104308" target="_blank" class="social-icon interactive-element"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="mailto:nabilsaids2026@gmail.com" class="social-icon interactive-element"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section">
+            <div class="container">
+                <div class="section-header reveal-bottom">
+                    <h2 class="section-title">About <span class="text-gradient">Me</span></h2>
+                    <div class="title-line"></div>
+                </div>
+                
+                <div class="about-split">
+                    <div class="about-text-container glass-panel reveal-left">
+                        <p class="about-text-body">
+                            Hi, I'm Mohamed Nabil. My journey started with studying Artificial Intelligence and Data Science. While I loved learning how AI works, I quickly realized something important: even the best technology needs a beautiful and easy-to-use interface to be useful.
+                        </p>
+                        <p class="about-text-body">
+                            That realization sparked my love for Frontend Development. I started building websites and web applications, learning how to turn complex data into clean, modern designs. 
+                        </p>
+                        <p class="about-text-body">
+                            Today, I specialize in building responsive, premium, and user-friendly websites. Whether it's a personal portfolio or a full business dashboard, I love writing clean code and creating designs that leave a great first impression.
+                        </p>
+                    </div>
+                    
+                    <div class="about-visuals reveal-right">
+                        <div class="profile-image-container tilt-card">
+                            <img src="images/profile/profile.jpeg" alt="Mohamed Nabil S" class="about-img">
+                            <div class="img-overlay"></div>
+                        </div>
+                        <div class="stats-container">
+                            <div class="stat-badge glass-panel tilt-card">
+                                <h3 class="stat-num text-gradient">AI/DS</h3>
+                                <p class="stat-text">Background</p>
+                            </div>
+                            <div class="stat-badge glass-panel tilt-card">
+                                <h3 class="stat-num text-gradient">Real</h3>
+                                <p class="stat-text">Projects Built</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section">
+            <div class="container">
+                <div class="section-header reveal-bottom">
+                    <h2 class="section-title">Technical <span class="text-gradient">Skills</span></h2>
+                    <div class="title-line"></div>
+                </div>
+                
+                <div class="skills-showcase">
+                    <!-- Frontend -->
+                    <div class="skill-category reveal-bottom">
+                        <h3 class="category-title">Frontend</h3>
+                        <div class="skill-grid">
+                            <div class="skill-card glass-panel tilt-card">
+                                <i class="devicon-html5-plain colored"></i>
+                                <span>HTML</span>
+                            </div>
+                            <div class="skill-card glass-panel tilt-card">
+                                <i class="devicon-css3-plain colored"></i>
+                                <span>CSS</span>
+                            </div>
+                            <div class="skill-card glass-panel tilt-card">
+                                <i class="devicon-javascript-plain colored"></i>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Backend -->
+                    <div class="skill-category reveal-bottom" style="transition-delay: 0.1s;">
+                        <h3 class="category-title">Backend</h3>
+                        <div class="skill-grid">
+                            <div class="skill-card glass-panel tilt-card">
+                                <i class="devicon-python-plain colored"></i>
+                                <span>Python</span>
+                            </div>
+                            <div class="skill-card glass-panel tilt-card">
+                                <i class="devicon-flask-original colored"></i>
+                                <span>Flask</span>
+                            </div>
+                            <div class="skill-card glass-panel tilt-card">
+                                <i class="devicon-mysql-plain colored"></i>
+                                <span>MySQL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- AI/Data -->
+                    <div class="skill-category reveal-bottom" style="transition-delay: 0.2s;">
+                        <h3 class="category-title">AI & Data</h3>
+                        <div class="skill-grid">
+                            <div class="skill-card glass-panel tilt-card">
+                                <i class="devicon-pandas-original colored"></i>
+                                <span>Pandas</span>
+                            </div>
+                            <div class="skill-card glass-panel tilt-card">
+                                <i class="devicon-numpy-original colored"></i>
+                                <span>NumPy</span>
+                            </div>
+                            <div class="skill-card glass-panel tilt-card">
+                                <i class="fas fa-chart-line custom-icon colored-gold"></i>
+                                <span>Tableau</span>
+                            </div>
+                            <div class="skill-card glass-panel tilt-card">
+                                <i class="fas fa-brain custom-icon colored-gold"></i>
+                                <span>ML</span>
+                            </div>
+                            <div class="skill-card glass-panel tilt-card">
+                                <i class="fas fa-network-wired custom-icon colored-gold"></i>
+                                <span>Deep Learning</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tools -->
+                    <div class="skill-category reveal-bottom" style="transition-delay: 0.3s;">
+                        <h3 class="category-title">Tools</h3>
+                        <div class="skill-grid">
+                            <div class="skill-card glass-panel tilt-card">
+                                <i class="devicon-git-plain colored"></i>
+                                <span>Git</span>
+                            </div>
+                            <div class="skill-card glass-panel tilt-card">
+                                <i class="devicon-github-original"></i>
+                                <span>GitHub</span>
+                            </div>
+                            <div class="skill-card glass-panel tilt-card">
+                                <i class="fas fa-server custom-icon colored-gold"></i>
+                                <span>Netlify</span>
+                            </div>
+                            <div class="skill-card glass-panel tilt-card">
+                                <i class="fas fa-cloud custom-icon colored-gold"></i>
+                                <span>Vercel</span>
+                            </div>
+                            <div class="skill-card glass-panel tilt-card">
+                                <i class="devicon-vscode-plain colored"></i>
+                                <span>VS Code</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects section">
+            <div class="container">
+                <div class="section-header reveal-bottom">
+                    <h2 class="section-title">Featured <span class="text-gradient">Projects</span></h2>
+                    <div class="title-line"></div>
+                </div>
+                
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-item glass-panel tilt-card reveal-bottom">
+                        <div class="project-visual">
+                            <img src="images/projects/genslux-project.png" alt="GensLux PG Website" class="project-img">
+                            <div class="project-overlay">
+                                <a href="#" class="btn-icon interactive-element" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="btn-icon interactive-element" title="Source Code"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <h3 class="project-title">GensLux PG Website</h3>
+                            <div class="project-tags">
+                                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-item glass-panel tilt-card reveal-bottom" style="transition-delay: 0.1s;">
+                        <div class="project-visual">
+                            <img src="images/projects/resume-system.png" alt="Resume Management System" class="project-img">
+                            <div class="project-overlay">
+                                <a href="#" class="btn-icon interactive-element" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="btn-icon interactive-element" title="Source Code"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <h3 class="project-title">Resume Management & Job Matching System</h3>
+                            <div class="project-tags">
+                                <span>Python</span><span>Flask</span><span>MySQL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-item glass-panel tilt-card reveal-bottom" style="transition-delay: 0.2s;">
+                        <div class="project-visual">
+                            <img src="images/projects/pneumonia-project.png" alt="Pneumonia Detection" class="project-img">
+                            <div class="project-overlay">
+                                <a href="#" class="btn-icon interactive-element" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="btn-icon interactive-element" title="Source Code"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <h3 class="project-title">Pneumonia Detection Using Deep Learning</h3>
+                            <div class="project-tags">
+                                <span>Python</span><span>Deep Learning</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="project-item glass-panel tilt-card reveal-bottom" style="transition-delay: 0.3s;">
+                        <div class="project-visual">
+                            <img src="images/projects/sales-dashboard.png" alt="Sales Data Dashboard" class="project-img">
+                            <div class="project-overlay">
+                                <a href="#" class="btn-icon interactive-element" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="btn-icon interactive-element" title="Source Code"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <h3 class="project-title">Sales Data Analysis & Business Dashboard</h3>
+                            <div class="project-tags">
+                                <span>Pandas</span><span>NumPy</span><span>Tableau</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience section">
+            <div class="container">
+                <div class="section-header reveal-bottom">
+                    <h2 class="section-title">Professional <span class="text-gradient">Experience</span></h2>
+                    <div class="title-line"></div>
+                </div>
+                
+                <div class="timeline">
+                    <!-- Experience 1 -->
+                    <div class="timeline-item glass-panel reveal-bottom tilt-card">
+                        <div class="timeline-icon">
+                            <i class="fas fa-chart-pie"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3 class="timeline-role">Data Analyst Intern</h3>
+                            </div>
+                            <h4 class="timeline-company">Livestream, Coimbatore</h4>
+                        </div>
+                    </div>
+
+                    <!-- Experience 2 -->
+                    <div class="timeline-item glass-panel reveal-bottom tilt-card" style="transition-delay: 0.1s;">
+                        <div class="timeline-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3 class="timeline-role">Generative AI Intern</h3>
+                            </div>
+                            <h4 class="timeline-company">Zephyr Technology & Solutions, Bangalore</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section">
+            <div class="container">
+                <div class="section-header reveal-bottom">
+                    <h2 class="section-title">Get In <span class="text-gradient">Touch</span></h2>
+                    <div class="title-line"></div>
+                </div>
+                
+                <div class="contact-layout">
+                    <div class="contact-info reveal-left">
+                        <a href="mailto:nabilsaids2026@gmail.com" class="contact-card glass-panel tilt-card interactive-element">
+                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                            <div class="contact-details">
+                                <span class="contact-label">Email</span>
+                                <span class="contact-value">nabilsaids2026@gmail.com</span>
+                            </div>
+                        </a>
+                        
+                        <a href="tel:+919043431844" class="contact-card glass-panel tilt-card interactive-element">
+                            <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+                            <div class="contact-details">
+                                <span class="contact-label">Phone</span>
+                                <span class="contact-value">+91 90434 31844</span>
+                            </div>
+                        </a>
+
+                        <a href="https://wa.me/919043431844" target="_blank" class="contact-card glass-panel tilt-card interactive-element whatsapp-card">
+                            <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+                            <div class="contact-details">
+                                <span class="contact-label">WhatsApp</span>
+                                <span class="contact-value">Chat with me</span>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="contact-form-container reveal-right">
+                        <form class="glass-form glass-panel" id="contact-form">
+                            <div class="form-group">
+                                <input type="text" id="name" placeholder="Name" required>
+                                <span class="focus-bar"></span>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" placeholder="Email" required>
+                                <span class="focus-bar"></span>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" rows="4" placeholder="Message" required></textarea>
+                                <span class="focus-bar"></span>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block interactive-element">
+                                <span>Send Message</span> <i class="fas fa-paper-plane ml-5"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-logo">MN.</div>
+            <div class="footer-socials">
+                <a href="https://github.com/Mohamednabil292638" target="_blank" class="social-link interactive-element"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/mohamed-nabil-950104308" target="_blank" class="social-link interactive-element"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p class="footer-text">&copy; <span id="year"></span> Mohamed Nabil S. Built with passion.</p>
+        </div>
+    </footer>
+
+    <!-- Floating Actions -->
+    <a href="https://wa.me/919043431844" target="_blank" class="floating-btn whatsapp-floating interactive-element" title="WhatsApp Me">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    
+    <button class="floating-btn scroll-top-btn interactive-element" id="scrollTopBtn" title="Back to Top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Vanilla Tilt for 3D Cards -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
