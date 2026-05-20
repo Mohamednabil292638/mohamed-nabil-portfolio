@@ -1,0 +1,64 @@
+{
+  "store": {
+    "name": "S.M.K. SHRI AYYAPPA GARMENTS",
+    "whatsappNumber": "919043431844",
+    "currency": "INR"
+  },
+  "categories": [
+    "Cotton Shirts",
+    "Linen Shirts",
+    "Premium T-Shirts",
+    "Wholesale Fabrics"
+  ],
+  "products": [
+    {
+      "id": "smk-ct-01",
+      "name": "Premium Cotton Shirt",
+      "category": "Cotton Shirts",
+      "price": 649,
+      "image": "assets/products/shirt-cotton-1.jpg",
+      "description": "Wholesale-grade cotton shirt with breathable comfort and a clean finish."
+    },
+    {
+      "id": "smk-ct-02",
+      "name": "Cotton Formal Shirt",
+      "category": "Cotton Shirts",
+      "price": 699,
+      "image": "assets/products/shirt-cotton-2.jpg",
+      "description": "Elegant stitching and long-lasting fabric texture for bulk orders."
+    },
+    {
+      "id": "smk-ln-01",
+      "name": "Linen Blend Shirt",
+      "category": "Linen Shirts",
+      "price": 749,
+      "image": "assets/products/shirt-linen-1.jpg",
+      "description": "Linen blend for premium drape and summer-friendly breathability."
+    },
+    {
+      "id": "smk-ts-01",
+      "name": "Premium Cotton T-Shirt",
+      "category": "Premium T-Shirts",
+      "price": 399,
+      "image": "assets/products/tshirt-1.jpg",
+      "description": "Soft feel, durable print-ready fabric—built for wholesale distribution."
+    },
+    {
+      "id": "smk-ts-02",
+      "name": "Super Soft Tee",
+      "category": "Premium T-Shirts",
+      "price": 429,
+      "image": "assets/products/tshirt-2.jpg",
+      "description": "Comfort-first wholesale tee with a premium fabric finish."
+    },
+    {
+      "id": "smk-fb-01",
+      "name": "Wholesale Fabric Lot",
+      "category": "Wholesale Fabrics",
+      "price": 1299,
+      "image": "assets/products/fabric-1.jpg",
+      "description": "Assorted fabric lot for garment businesses—quality controlled and bulk-ready."
+    }
+  ]
+}
+

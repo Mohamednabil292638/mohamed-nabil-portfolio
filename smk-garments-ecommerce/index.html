@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SMK Garments Ecommerce | Premium Wholesale</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Reuse portfolio theme styles exactly -->
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Reuse portfolio ambient UI wrappers -->
+  <div class="preloader" id="preloader">
+    <div class="loader-content">
+      <span class="loader-logo">MN.</span>
+      <div class="loader-bar">
+        <div class="loader-progress"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cursor-dot" id="cursor-dot"></div>
+  <div class="cursor-outline" id="cursor-outline"></div>
+
+  <div class="ambient-background">
+    <div class="ambient-blob blob-1"></div>
+    <div class="ambient-blob blob-2"></div>
+    <div class="ambient-blob blob-3"></div>
+  </div>
+
+  <canvas id="bg-canvas"></canvas>
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Minimal internal header (does not modify portfolio navbar) -->
+  <header class="header" id="header">
+    <nav class="navbar container">
+      <a href="index.html" class="logo">
+        <span class="logo-text">SMK.</span>
+      </a>
+      <ul class="nav-menu" id="nav-menu">
+        <li class="nav-item"><a href="index.html" class="nav-link active">Shop</a></li>
+        <li class="nav-item"><a href="cart.html" class="nav-link">Cart</a></li>
+        <li class="nav-item"><a href="checkout.html" class="nav-link">Checkout</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+  </header>
+
+  <main class="content-wrapper">
+
+    <!-- Catalog / Hero -->
+    <section class="hero section">
+      <div class="container hero-container">
+        <div class="hero-content reveal-bottom">
+          <p class="hero-greeting">Premium Wholesale Ecommerce</p>
+          <h1 class="hero-name glow-text">S.M.K. SHRI AYYAPPA GARMENTS</h1>
+          <h2 class="hero-title">
+            Tiruppur-based wholesale <span class="divider">|</span> Bulk-ready collections
+          </h2>
+          <p class="hero-desc">
+            Browse wholesale garment products. Add items to cart, proceed to checkout, and place orders quickly via WhatsApp.
+          </p>
+          <div class="hero-actions">
+            <a href="#products" class="btn btn-primary interactive-element">View Products</a>
+            <a href="cart.html" class="btn btn-secondary interactive-element">Go to Cart</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="projects section" style="padding-top:0;">
+      <div class="container">
+        <div class="section-header reveal-bottom">
+          <h2 class="section-title">Wholesale <span class="text-gradient">Catalog</span></h2>
+          <div class="title-line"></div>
+        </div>
+
+        <div class="shop-controls glass-panel reveal-left">
+          <div class="control-row">
+            <div class="control-item">
+              <label class="control-label" for="category">Category</label>
+              <select id="category" class="control-select">
+                <option value="all">All</option>
+              </select>
+            </div>
+            <div class="control-item">
+              <label class="control-label" for="search">Search</label>
+              <input id="search" type="text" class="control-input" placeholder="Search products..." />
+            </div>
+            <div class="control-item control-item-wide">
+              <label class="control-label" for="sort">Sort</label>
+              <select id="sort" class="control-select">
+                <option value="featured">Featured</option>
+                <option value="low">Price: Low to High</option>
+                <option value="high">Price: High to Low</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="products-grid" id="productsGrid"></div>
+      </div>
+    </section>
+
+    <!-- WhatsApp Order CTA -->
+    <section class="section">
+      <div class="container">
+        <div class="glass-panel reveal-right" style="padding:28px;">
+          <div class="shop-cta">
+            <div>
+              <h3 class="project-title" style="margin-bottom:10px;">Need bulk pricing?</h3>
+              <p class="hero-desc" style="margin:0; font-size:1rem;">
+                Place your requirements on WhatsApp and get a quick response.
+              </p>
+            </div>
+            <a id="whatsappQuickLink" href="#" target="_blank" class="btn btn-primary interactive-element">WhatsApp Order</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-logo">SMK.</div>
+      <div class="footer-socials">
+        <a href="https://wa.me/919043431844" target="_blank" class="social-link interactive-element"><i class="fab fa-whatsapp"></i></a>
+      </div>
+      <p class="footer-text">&copy; <span id="year"></span> SMK Garments. Premium wholesale built for bulk orders.</p>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/919043431844" target="_blank" class="floating-btn whatsapp-floating interactive-element" title="WhatsApp Me">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <button class="floating-btn scroll-top-btn interactive-element" id="scrollTopBtn" title="Back to Top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+  <script src="../js/script.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
+

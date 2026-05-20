@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product | SMK Garments Ecommerce</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="preloader" id="preloader">
+    <div class="loader-content">
+      <span class="loader-logo">MN.</span>
+      <div class="loader-bar">
+        <div class="loader-progress"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cursor-dot" id="cursor-dot"></div>
+  <div class="cursor-outline" id="cursor-outline"></div>
+
+  <div class="ambient-background">
+    <div class="ambient-blob blob-1"></div>
+    <div class="ambient-blob blob-2"></div>
+    <div class="ambient-blob blob-3"></div>
+  </div>
+
+  <canvas id="bg-canvas"></canvas>
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <header class="header" id="header">
+    <nav class="navbar container">
+      <a href="index.html" class="logo">
+        <span class="logo-text">SMK.</span>
+      </a>
+      <ul class="nav-menu" id="nav-menu">
+        <li class="nav-item"><a href="index.html" class="nav-link">Shop</a></li>
+        <li class="nav-item"><a href="cart.html" class="nav-link">Cart</a></li>
+        <li class="nav-item"><a href="checkout.html" class="nav-link">Checkout</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+  </header>
+
+  <main class="content-wrapper">
+
+    <section class="section" style="padding-top:120px;">
+      <div class="container">
+        <div class="section-header reveal-bottom">
+          <h2 class="section-title">Product <span class="text-gradient">Details</span></h2>
+          <div class="title-line"></div>
+        </div>
+
+        <div class="product-layout" id="productLayout">
+          <!-- JS renders -->
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-logo">SMK.</div>
+      <div class="footer-socials">
+        <a href="https://wa.me/919043431844" target="_blank" class="social-link interactive-element"><i class="fab fa-whatsapp"></i></a>
+      </div>
+      <p class="footer-text">&copy; <span id="year"></span> SMK Garments. Premium wholesale built for bulk orders.</p>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/919043431844" target="_blank" class="floating-btn whatsapp-floating interactive-element" title="WhatsApp Me">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <button class="floating-btn scroll-top-btn interactive-element" id="scrollTopBtn" title="Back to Top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+  <script src="../js/script.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
+
+
